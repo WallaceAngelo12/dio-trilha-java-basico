@@ -15,7 +15,7 @@ public class ContaTerminal {
         String agencia = conta.next();
 
         System.out.println("Quando deseja depositar inicialmente? ");
-        Double saldo = conta.nextDouble();
+        double saldo = conta.nextDouble();
 
         System.out
                 .println("Olá " + nomeCliente + ", Obrigado por criar uma conta em nosso banco, sua agência é "
