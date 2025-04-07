@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco/ContaBanco.iml" filepath="$PROJECT_DIR$/ContaBanco/ContaBanco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Controle-fluxo/Controle-fluxo.iml" filepath="$PROJECT_DIR$/Controle-fluxo/Controle-fluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sistema-SmarTV-Java/Sistema-SmarTV-Java.iml" filepath="$PROJECT_DIR$/Sistema-SmarTV-Java/Sistema-SmarTV-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tipos-variaveis/Tipos-variaveis.iml" filepath="$PROJECT_DIR$/Tipos-variaveis/Tipos-variaveis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" filepath="$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" />
+    </modules>
+  </component>
+</project>
