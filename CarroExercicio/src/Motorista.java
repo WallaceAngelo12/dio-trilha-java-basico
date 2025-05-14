@@ -7,7 +7,7 @@ public class Motorista {
         Carro carro = new Carro();
 
         do {
-            System.out.println("====== Menu =======")
+            System.out.println("====== Menu =======");
             System.out.println("1 - Ligar");
             System.out.println("2 - Desligar");
             System.out.println("3 - Acelerar");
@@ -19,7 +19,14 @@ public class Motorista {
             System.out.println("0 - Sair");
             System.out.println("Escolha uma opção: ");
 
-            option = scanner.hasNextInt();
+            if (scanner.hasNextInt()) {
+                option = scanner.nextInt();
+            } else {
+                System.out.println("Entrada inválida. Digite um número.");
+                scanner.next();
+                continue;
+            }
+
             switch (option) {
                 case 1:
                     carro.ligar();
@@ -38,8 +45,13 @@ public class Motorista {
                     break;
                 case 6:
                     System.out.println("Digite a marcha desejada: ");
-                    int marchaInput = scanner.hasNextInt();
-                    carro.trocarMarcha(marchaInput);
+                    if (scanner.hasNextInt()) {
+                        int marchaInput = scanner.nextInt();
+                        carro.trocarMarcha(marchaInput);
+                    } else {
+                        System.out.println("Entrada inválida. Digite um número inteiro.");
+                        scanner.next(); // consome o texto inválido
+                    }
                     break;
                 case 7:
                     carro.virarDireita();

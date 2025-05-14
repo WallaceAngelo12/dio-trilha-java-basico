@@ -38,18 +38,21 @@ public class Carro {
             System.out.println("O carro está em velocidade máxima");
             return;
         }
-        if(marcha == 1 && velocidade >= 0 && velocidade <= 20){
+        if(marcha == 1 && velocidade >= 0 && velocidade < 20){
             velocidade += 1;
-        } else if (marcha== 2 && velocidade >= 21 && velocidade <= 40) {
+        } else if (marcha== 2 && velocidade >= 20 && velocidade < 40) {
             velocidade += 1;
-        } else if (marcha== 3 && velocidade >= 41 && velocidade <=60) {
+        } else if (marcha== 3 && velocidade >= 40 && velocidade < 60) {
             velocidade += 1;
-        } else if (marcha== 4 && velocidade >= 61 && velocidade <=80) {
+        } else if (marcha== 4 && velocidade >= 60 && velocidade < 80) {
             velocidade += 1;
-        } else if (marcha== 5 && velocidade >= 81 && velocidade <=100) {
+        } else if (marcha== 5 && velocidade >= 80 && velocidade < 100) {
              velocidade += 1;
-        } else if (marcha== 6 && velocidade >= 101 && velocidade <=120) {
+        } else if (marcha== 6 && velocidade >= 100 && velocidade < 120) {
             velocidade += 1;
+        }else{
+            System.out.println("A marcha não está na posição desejada");
+            return;
         }
         System.out.println("Acelerando... A velocidade do carro é: " + velocidade);
     }
@@ -63,18 +66,21 @@ public class Carro {
             System.out.println("O carro já está parado");
             return;
         }
-        if(marcha == 1 && velocidade >= 0 && velocidade <= 20){
+        if(marcha == 1 && velocidade > 0 && velocidade < 20){
             velocidade -= 1;
-        } else if (marcha== 2 && velocidade >= 21 && velocidade <= 40) {
+        } else if (marcha== 2 && velocidade >= 21 && velocidade < 40) {
             velocidade -= 1;
-        } else if (marcha== 3 && velocidade >= 41 && velocidade <=60) {
+        } else if (marcha== 3 && velocidade >= 41 && velocidade < 60) {
             velocidade -= 1;
-        } else if (marcha== 4 && velocidade >= 61 && velocidade <=80) {
+        } else if (marcha== 4 && velocidade >= 61 && velocidade < 80) {
             velocidade -= 1;
-        } else if (marcha== 5 && velocidade >= 81 && velocidade <=100) {
+        } else if (marcha== 5 && velocidade >= 81 && velocidade < 100) {
             velocidade -= 1;
-        } else if (marcha== 6 && velocidade >= 101 && velocidade <=120) {
+        } else if (marcha== 6 && velocidade >= 101 && velocidade < 120) {
             velocidade -= 1;
+        }else{
+            System.out.println("A marcha não está na posição desejada");
+            return;
         }
         System.out.println("Freando... A velocidade do carro é: " + velocidade);
     }
