@@ -50,7 +50,7 @@ public class Motorista {
                         carro.trocarMarcha(marchaInput);
                     } else {
                         System.out.println("Entrada inválida. Digite um número inteiro.");
-                        scanner.next(); // consome o texto inválido
+                        scanner.next();
                     }
                     break;
                 case 7:
