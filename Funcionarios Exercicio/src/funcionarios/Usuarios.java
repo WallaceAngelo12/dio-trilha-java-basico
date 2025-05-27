@@ -1,3 +1,5 @@
+package funcionarios;
+
 public abstract class Usuarios {
 
     protected String nome;

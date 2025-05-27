@@ -1,3 +1,5 @@
+package funcionarios;
+
 public class Vendedor extends Usuarios{
 
         private int vendas;

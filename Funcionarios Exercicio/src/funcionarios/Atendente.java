@@ -1,3 +1,5 @@
+package funcionarios;
+
 public class Atendente extends Usuarios{
 
     private double caixa;

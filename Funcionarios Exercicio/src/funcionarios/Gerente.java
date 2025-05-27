@@ -1,3 +1,5 @@
+package funcionarios;
+
 public class Gerente extends Usuarios {
 
 
